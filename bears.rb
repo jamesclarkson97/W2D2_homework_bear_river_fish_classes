@@ -14,4 +14,8 @@ class Bears
     def take_fish(new_fish)
         @stomach.push(new_fish)
     end
+
+    def roar()
+        return "ROAR"
+    end
 end
