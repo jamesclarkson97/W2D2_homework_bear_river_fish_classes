@@ -10,10 +10,26 @@ class RiverTest < MiniTest::Test
 
     def setup()
         @river = River.new("Water of Leith")
+        @fish1 = Fish.new("James")
+        @fish2 = Fish.new("Simon")
+        @fish3 = Fish.new("Ali")
+        @fish4 = Fish.new("Ben")
+        @fish5 = Fish.new("x_WETBOI_x")
+
+        @fishes = [@fish1, @fish2, @fish3, @fish4, @fish5]
     end
 
     def test_get_name()
         assert_equal("Water of Leith", @river.name())
+    end
+
+    def test_add_fish()
+        assert_equal(1, @river.add_fish(@fish1).count())
+    end
+
+    def test_add_fishes()
+        total_fish = @river.add_fishes(@river, @fishes)
+        assert_equal(5, total_fish.count())
     end
 
 end

@@ -13,6 +13,8 @@ class FishTest < MiniTest::Test
         @fish3 = Fish.new("Ali")
         @fish4 = Fish.new("Ben")
         @fish5 = Fish.new("x_WETBOI_x")
+
+        @fishes = [@fish1, @fish2, @fish3, @fish4, @fish5]
     end
 
     def test_get_name()
