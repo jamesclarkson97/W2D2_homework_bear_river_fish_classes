@@ -20,4 +20,8 @@ class River
             river.add_fish(fish)
         end
     end
+
+    def remove_fish(old_fish)
+        @fish.delete(old_fish)
+    end
 end

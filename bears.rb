@@ -10,4 +10,8 @@ class Bears
     def bear_hunger_scale()
         return @stomach
     end
+
+    def take_fish()
+        
+    end
 end
