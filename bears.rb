@@ -11,7 +11,7 @@ class Bears
         return @stomach
     end
 
-    def take_fish()
-        
+    def take_fish(new_fish)
+        @stomach.push(new_fish)
     end
 end
