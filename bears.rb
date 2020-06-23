@@ -6,4 +6,8 @@ class Bears
         @name = name
         @stomach = []
     end
+
+    def bear_hunger_scale()
+        return @stomach
+    end
 end

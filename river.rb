@@ -7,6 +7,10 @@ class River
         @fish = []
     end
 
+    def fish_population()
+        return @fish
+    end
+
     def add_fish(new_fish)
         @fish.push(new_fish)
     end

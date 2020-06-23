@@ -16,4 +16,8 @@ class BearsTest < MiniTest::Test
         assert_equal("Baloo", @bear.name())
     end
 
+    def test_bear_hunger_scale()
+        assert_equal(0, @bear.bear_hunger_scale().count())
+    end
+
 end
