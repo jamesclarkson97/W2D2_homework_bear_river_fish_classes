@@ -40,4 +40,8 @@ class BearsTest < MiniTest::Test
         assert_equal("ROAR", @bear.roar())
     end
 
+    def test_food_count()
+        assert_equal(4, @bear.food_count(4))
+    end
+
 end

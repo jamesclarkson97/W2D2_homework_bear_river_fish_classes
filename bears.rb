@@ -18,4 +18,9 @@ class Bears
     def roar()
         return "ROAR"
     end
+
+    def food_count(new_food)
+        food_storaged = 0
+        return food_storaged += new_food
+    end
 end

@@ -23,8 +23,8 @@ class RiverTest < MiniTest::Test
         assert_equal("Water of Leith", @river.name())
     end
 
-    def test_fish_poptulation()
-        assert_equal(0, @river.fish_population().count())
+    def test_fish_count()
+        assert_equal(0, @river.fish_count().count())
     end
 
     def test_add_fish()
@@ -39,7 +39,7 @@ class RiverTest < MiniTest::Test
     def test_remove_fish()
         @river.add_fishes(@river, @fishes)
         @river.remove_fish(@fish1)
-        total_fish = @river.fish_population.count()
+        total_fish = @river.fish_count.count()
         assert_equal(4, total_fish)
     end
 
